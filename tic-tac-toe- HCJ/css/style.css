@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: "Gluten", cursive;
+    color: #4c6986;
+}
+.wrapper{
+    max-width: 100%;
+    height: 800px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;S
+}
+
+.restart{
+    width: 200px;
+    height:50px;
+    font-weight:bold;
+    margin-top:30px;
+    border:2px solid white;
+    border-radius:50px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    transition:all 0.2s ease;
+    cursor: pointer;
+
+
+}
+.restart:hover{
+    background-color: black;
+    color:yellow
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    
+    width: 700px;
+    height: 700px;
+
+}
+
+.header{
+    display: flex;
+    flex: 1;
+    color: black;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.header .player-X{
+    border-bottom: 4px solid;
+    padding-bottom: 8px;
+    flex: 1;
+}
+
+.player-X.active{
+    color:red;
+    border-color: red;
+}
+.header .player-O{
+    border-bottom: 4px solid;
+    padding-bottom: 8px;
+    flex: 1;
+
+}
+.player-O.active{
+    color:sandybrown;
+    border-color: sandybrown;
+}
+
+
+.board{
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 0;
+    flex-grow: 1;
+    grid-auto-flow: 1;
+}
+.board-tile{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-family: sans;
+    border: 2px solid ;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: #00C1D4;
+    cursor: pointer;
+}
+
+.tile-x{
+
+    display: flex;
+    flex: 1;
+    border-radius:20px ;
+    align-items: center;
+    justify-content: center;
+    font-size: 10rem;
+    padding:15px;
+    color:white;
+ 
+    background-color: red;
+
+}
+
+
+
+.tile-o {
+    display: flex;
+    flex: 0%;
+    
+    border-radius:20px ;
+    align-items: center;
+    justify-content: center;
+    font-size: 10rem;
+    color:white;
+    background-color: orange;
+    padding: 15PX;
+
+}
